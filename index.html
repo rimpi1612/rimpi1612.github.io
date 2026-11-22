@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syeda Rezwana Hasan | Selected Work</title>
+<meta name="description" content="Selected work on agent robustness and behavioral monitoring from a software engineer running AI agents against a production financial system.">
+<style>
+  :root {
+    --bg: #faf9f6;
+    --surface: #ffffff;
+    --text: #1f1e1c;
+    --muted: #6a6761;
+    --line: #e4e1d9;
+    --accent: #a4502c;
+    --chip-bg: #f1ece3;
+    --limit-bg: #f6f3ec;
+    --todo-bg: #fff1b8;
+    --todo-text: #5c4500;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #191817;
+      --surface: #211f1e;
+      --text: #ece9e2;
+      --muted: #a29e95;
+      --line: #36332f;
+      --accent: #e0916b;
+      --chip-bg: #2c2926;
+      --limit-bg: #262321;
+      --todo-bg: #4d3f0e;
+      --todo-text: #ffe9a3;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 20px 80px;
+  }
+  h1, h2 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+  }
+  h1 { font-size: 2.3rem; letter-spacing: -0.01em; }
+  .role { color: var(--muted); margin: 8px 0 0; font-size: 1.05rem; }
+  .links { margin: 14px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 0.95rem; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  .intro {
+    margin: 36px 0 0;
+    padding: 20px 0 0;
+    border-top: 1px solid var(--line);
+    font-size: 1.12rem;
+  }
+  .label {
+    font-size: 0.78rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .section-label { margin: 56px 0 4px; }
+  article {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 28px 28px 24px;
+    margin: 18px 0 0;
+  }
+  article h2 { font-size: 1.45rem; }
+  .num { color: var(--accent); margin-right: 6px; }
+  .chips { margin: 12px 0 4px; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips li {
+    background: var(--chip-bg);
+    border-radius: 999px;
+    padding: 2px 11px;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+  dl { margin: 16px 0 0; }
+  dt { margin: 18px 0 2px; }
+  dd { margin: 0; }
+  dd ul { margin: 6px 0 0; padding-left: 20px; }
+  dd li { margin: 4px 0; }
+  dd.limits {
+    background: var(--limit-bg);
+    border-left: 3px solid var(--line);
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    color: var(--muted);
+  }
+  .todo {
+    background: var(--todo-bg);
+    color: var(--todo-text);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 0.92em;
+  }
+  footer {
+    margin: 56px 0 0;
+    padding: 20px 0 0;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  @media (max-width: 520px) {
+    main { padding: 40px 16px 56px; }
+    h1 { font-size: 1.85rem; }
+    article { padding: 22px 18px 20px; }
+  }
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    main { padding: 0; max-width: none; }
+    article { break-inside: avoid; border-color: #ccc; }
+    .todo { background: none; border: 1px dashed #999; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>Syeda Rezwana Hasan</h1>
+    <p class="role">Lead Staff Engineer &middot; applied AI controls on a production financial system</p>
+    <ul class="links">
+      <li><a href="mailto:rimpi1612@gmail.com">rimpi1612@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/syeda-rezwana-hasan">LinkedIn</a></li>
+      <li><a href="https://github.com/rimpi1612">GitHub</a></li>
+    </ul>
+    <p class="intro">
+      I am a software engineer who runs AI agents daily against a production financial system and
+      builds the safety limits for a customer-facing AI assistant on the same system. My work here
+      is applied: building controls that hold when the model is wrong, and checking model input and
+      output before either can cause harm. I want to bring that to research on agent robustness and
+      behavioral monitoring.
+    </p>
+  </header>
+
+  <p class="label section-label">Selected work</p>
+
+  <article>
+    <h2><span class="num">1.</span>Harness-level limits for coding agents with real access</h2>
+    <ul class="chips"><li>Adversarial robustness</li><li>Agents</li></ul>
+    <dl>
+      <dt class="label">Setting</dt>
+      <dd>AI coding agents working in a production codebase, with reach into shared databases, a staging server, version control, the ticket system, and customers' accounting and tax integrations. This is my own working setup, not a company product.</dd>
+
+      <dt class="label">Threat model</dt>
+      <dd>The agent takes a harmful action while following a plausible instruction, whether from me, from a stale note, or from text it read in a file, log or ticket. The actions that matter are irreversible or outward-facing: pushing code, deploying, committing credentials, editing tickets, sending data to a customer's live external account.</dd>
+
+      <dt class="label">Controls</dt>
+      <dd>Two layers, kept separate on purpose.
+        <ul>
+          <li><strong>Enforced by the harness:</strong> a pre-action hook that blocks a push when the branch conflicts with mainline, and a pre-commit guard that refuses credential and local-only files in every worktree.</li>
+          <li><strong>Enforced by standing rules:</strong> each irreversible action needs a fresh human request; approval never carries over to the next task. Before any test on a copy of customer data, every outbound integration on that copy is switched off and verified.</li>
+        </ul>
+      </dd>
+
+      <dt class="label">What I learned</dt>
+      <dd>Rules in the prompt fail silently; hooks fail loudly. Every rule I later moved into a hook was one that had been broken at least once. The cost side matters too: a control that interrupts normal work gets bypassed, so each one was tuned to fire only on the dangerous action.</dd>
+
+      <dt class="label">Limits</dt>
+      <dd class="limits">No measured attack set. This is defence built from incidents, not from red-teaming.</dd>
+
+      <dt class="label">Result</dt>
+      <dd>In daily use since July 2026. The push guard merged mainline automatically on 201 pushes and blocked 166. None of the 166 was a real conflict; all were uncommitted local files, which showed me how often a blunt control fires on harmless work. The commit guard refused 3 commits that carried local-only patches.</dd>
+    </dl>
+  </article>
+
+  <article>
+    <h2><span class="num">2.</span>Safety limits on a customer-facing AI assistant</h2>
+    <ul class="chips"><li>Behavioral monitoring</li><li>AI control</li></ul>
+    <dl>
+      <dt class="label">Setting</dt>
+      <dd>An in-app assistant answers staff questions by looking up live business data in a multi-tenant ERP. I built the server-side controls; the settings screens were built by a colleague.</dd>
+
+      <dt class="label">Threat model</dt>
+      <dd>A user asks the assistant for data they should not see, sends a question it should not act on, or uses it heavily enough to slow the shared system for every customer.</dd>
+
+      <dt class="label">Controls</dt>
+      <dd>
+        <ul>
+          <li><strong>Input screening:</strong> every message in the conversation is screened before the model sees it, after hidden and look-alike characters are removed. The screen refuses attempts to override the assistant's instructions and requests involving payment card or bank account numbers. After a set number of refusals the user is paused, staff are alerted, and only an administrator can lift the pause.</li>
+          <li><strong>Output filtering:</strong> protected fields are stripped from what the assistant can return, whatever the question.</li>
+          <li><strong>Resource limits:</strong> a busy limit per customer and a time limit on every lookup, so one user cannot exhaust the system.</li>
+          <li><strong>Feedback loop:</strong> users rate answers. Answers are kept 48 hours for rating and feedback text is cleared after 90 days.</li>
+        </ul>
+      </dd>
+
+      <dt class="label">What I learned</dt>
+      <dd>Each control needs a decision about which way it fails. Here, if the rate limiter or the pause check is unavailable, the question still goes through and the failure is logged. That favours availability and was a deliberate choice for this product; for a higher-stakes assistant I would choose the opposite. A review before release also found that the screen judged only the latest message, so a refused request planted in an earlier turn reached the model unscreened. Every turn is now screened.</dd>
+
+      <dt class="label">Limits</dt>
+      <dd class="limits">The controls fail open. The load test ran on a laptop with a stand-in model, and the how-to evaluation is not yet valid, so I cannot state how often the screen is right.</dd>
+
+      <dt class="label">Result</dt>
+      <dd>Merged November 2026. In a load test with a stand-in model, 60 simultaneous users for 90 seconds produced 776 busy refusals, 24 answers and no server errors, and no customer ever had more than 3 questions running. Number answers passed 8 of 8 evaluation cases; the how-to evaluation is not yet valid.</dd>
+    </dl>
+  </article>
+
+  <article>
+    <h2><span class="num">3.</span>A verification layer over AI reviewers</h2>
+    <ul class="chips"><li>Behavioral monitoring</li></ul>
+    <dl>
+      <dt class="label">Setting</dt>
+      <dd>AI agents review code changes that touch money and stock. This is my own working setup, not a company product.</dd>
+
+      <dt class="label">Problem</dt>
+      <dd>A single reviewer is confident and often wrong. A false finding costs more than a missed one, because someone acts on it.</dd>
+
+      <dt class="label">Design</dt>
+      <dd>
+        <ul>
+          <li>Independent reviewer agents, each given one lens (removed behaviour, cross-file effects, language pitfalls, efficiency, and others) over the whole change, so their errors are less correlated than reviewers split by file.</li>
+          <li>A separate verification pass checks every finding against the actual code before it reaches a person. Unverified findings are dropped, not softened.</li>
+          <li>The monitor is tested too: I break the code on purpose and confirm the tests fail, and a contract test asserts each test fake still matches the real class.</li>
+        </ul>
+      </dd>
+
+      <dt class="label">What I learned</dt>
+      <dd>The verifier is only useful if it sees the code and not the reviewer's reasoning; given the conclusion, it tends to confirm it.</dd>
+
+      <dt class="label">Limits</dt>
+      <dd class="limits">No labelled set, so I cannot state precision or recall. Building one is the obvious next step.</dd>
+
+      <dt class="label">Result</dt>
+      <dd>In use since late September 2026 on 78 tickets. At least 41 reviewer claims were dropped after checking them against the code or data, and at least 129 issues were fixed before merge. In one case a review found a way past an administrator check; it was reproduced and fixed before release.</dd>
+    </dl>
+  </article>
+
+  <article>
+    <h2><span class="num">4.</span>Deterministic checks on an LLM that proposes financial records</h2>
+    <ul class="chips"><li>Behavioral monitoring</li><li>AI control</li></ul>
+    <dl>
+      <dt class="label">Setting</dt>
+      <dd>An LLM reads supplier invoices and matches them to purchase orders in a multi-tenant ERP. Accepted output becomes bills and cost entries in customers' books.</dd>
+
+      <dt class="label">Threat model</dt>
+      <dd>The model's output is untrusted: a misread quantity, an invented line, a match to the wrong order.</dd>
+
+      <dt class="label">Control</dt>
+      <dd>The model proposes; server-side rules decide. A billed quantity cannot exceed what was ordered or received. Cost increases beyond a set rule are refused. Charges the model cannot match go to a fixed, typed category instead of a guess. Large jobs run in a queue, and every refusal carries a reason code that reaches a person. Posting without a person is off by default. Only an administrator can switch it on, normally the customer's own, and must name an accountable user who is active and allowed to post bills; the server re-checks that on every save. Automatic posts run under that user's name and can be limited to chosen suppliers. A bill posts on its own only when it matches the order closely enough. Anything else goes to a review list, the responsible person is notified, and it stays there until a person handles it.</dd>
+
+      <dt class="label">What I learned</dt>
+      <dd>
+        <ul>
+          <li>Cheap deterministic checks catch a large share of harmful output when the domain has hard invariants.</li>
+          <li>They do not catch a wrong assumption in the prompt. One rule in the reader's prompt said a size is a garment size. Nobody had asked for that rule; an AI coding agent had written it in, and it was copied to a second reader. Every non-garment line was flagged as a wrong size until a tester noticed about three weeks later. The fix was small. The lasting change was a rule for the agents: no business rule goes into a prompt unless a person stated it.</li>
+          <li>The open question, and the one I would like to study, is what to do where no invariant exists and the monitor must itself be a model.</li>
+        </ul>
+      </dd>
+
+      <dt class="label">Result</dt>
+      <dd>First version merged October 2026. Review before release found and fixed 26 issues across the two readers, and 678 unit tests now cover reading and matching. Production volumes are not included here.</dd>
+    </dl>
+  </article>
+
+  <article>
+    <h2><span class="num">5.</span>Removing client-side authority over AI metering and spend</h2>
+    <ul class="chips"><li>Adversarial robustness</li><li>Attack surface</li></ul>
+    <dl>
+      <dt class="label">Setting</dt>
+      <dd>Prepaid, per-customer metered AI usage, billed through a separate billing system.</dd>
+
+      <dt class="label">Attack surface</dt>
+      <dd>The client application could influence values that billing and limits depended on: prices, settings and usage records.</dd>
+
+      <dt class="label">What I did</dt>
+      <dd>
+        <ul>
+          <li>Audited every write path. Usage is recorded only by the server at the point of the model call; prices and settings change only through a platform administrator.</li>
+          <li>Set each customer's spend cap at the model provider from that customer's paid credit, so a defect in our own metering cannot overspend.</li>
+          <li>Signed the messages between the product and the billing system; an unsigned message is refused.</li>
+          <li>AI document reading is off by default behind a platform-set master switch.</li>
+        </ul>
+      </dd>
+
+      <dt class="label">Result</dt>
+      <dd>Closed 4 client-callable usage-write calls, 6 settings routes (2 of which had needed no sign-in) and 1 pass-through route to the model provider. The API key no longer leaves the server. 11 administrator actions sit behind a tested gate, backed by 238 unit tests. Running in the test environment and connected to the billing system; not yet released to production.</dd>
+    </dl>
+  </article>
+
+  <p class="label section-label">Other current work</p>
+
+  <article>
+    <h2>A greenfield multi-tenant platform, built alone with AI coding agents</h2>
+    <ul class="chips"><li>Private, in progress</li><li>Go, React, PostgreSQL</li></ul>
+    <dl>
+      <dd>I am the only engineer on this project and build it with Claude coding agents under written working agreements. A review by a second engineer is planned and has not happened yet. The details are confidential, so I can describe only the design choices: one authorization path that answers every access question, tested against a fixed matrix of cases; tenant isolation enforced in the database; and audit logging built in the first milestone, because it cannot be added afterwards.</dd>
+    </dl>
+  </article>
+
+  <p class="label section-label">Machine-learning foundations (2021 coursework)</p>
+
+  <article>
+    <dl>
+      <dd>Before the applied work above, I trained and evaluated models in a university FinTech program. These are course assignments, listed to show the base I am building on.
+        <ul>
+          <li><a href="https://github.com/rimpi1612/Risky-Business">Credit-risk classification on imbalanced data</a>: resampling and ensemble methods, compared by balanced accuracy. The rare-event problem is the same one a safety monitor faces.</li>
+          <li><a href="https://github.com/rimpi1612/LSTM-Stock-Prediction">LSTM price prediction</a>: built, trained and compared two recurrent networks on the same architecture with different inputs.</li>
+          <li><a href="https://github.com/rimpi1612/sql-suspicious-transactions">Suspicious card transactions</a>: data model and analysis to surface likely fraud.</li>
+        </ul>
+      </dd>
+    </dl>
+  </article>
+
+  <footer>
+    The systems described are proprietary. Customer names, code and internal identifiers are left out on purpose; I am glad to go deeper in conversation.
+  </footer>
+
+</main>
+</body>
+</html>
